@@ -1,0 +1,55 @@
+{% load static %}
+{% extends 'completed_todo_list.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoList</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+</head>
+<body>
+
+<div class="header">
+<h2>ToDoList</h2>
+</div>
+<div class="main">
+<button class="add-btn">Add Task</button>
+<table class="items">
+    <caption>List 1</caption>
+    <hr>
+    <tr>
+        <th>Task</th>
+        <th>Created</th>
+        <th>Due On</th>
+        <th>Owner</th>
+        <th>Mark</th>
+    </tr>
+    <tr>
+        <td class="name">{{ task1.name }}</td>
+        <td>{{ task1.created }}</td>
+        <td>{{ task1.dueon }}</td>
+        <td>{{ task1.owner }}</td>
+        <td> <button class="done-btn">Done</button></td>
+    </tr>
+    <tr>
+        <td class="name">{{ task2.name }}</td>
+        <td>{{ task2.created }}</td>
+        <td>{{ task2.dueon }}</td>
+        <td>{{ task2.owner }}</td>
+        <td> <button class="done-btn">Done</button></td>
+    </tr>
+    <tr>
+        <td class="name">{{ task3.name }}</td>
+        <td>{{ task3.created }}</td>
+        <td>{{ task3.dueon }}</td>
+        <td>{{ task3.owner }}</td>
+        <td> <button class="done-btn">Done</button></td>
+    </tr>
+</table>
+    {% block body %}
+    <button class="comp-btn">View completed tasks</button>
+    <button class="delete-btn">Delete this list</button>
+    {% endblock %}
+</div>
+</body>
+</html>
