@@ -1,0 +1,82 @@
+h1 {
+    color: blue;
+}
+body {
+}
+.header {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 1500px;
+    height: 70px;
+    background: black;
+}
+.main {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.header h2 {
+    color: white;
+}
+.add-btn{
+    margin-top: 10px;
+
+    background: #4579bf;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+caption {
+    color: black;
+    font-size: 40px;
+}
+tr, td, th{
+  border-bottom: 1px solid gray;
+
+}
+th {
+    font-size: 25px;
+}
+td {
+    text-align: center;
+
+    font-size: 15px;
+}
+tr {
+    margin-top: 10px;
+}
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid gray;
+}
+.name {
+    color: #4579bf;
+    font-weight: bold;
+}
+.done-btn {
+    background: #4579bf;
+    color: white;
+    border: 0px;
+    height: 30px;
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.comp-btn {
+    background: #f6bb55;
+    border-radius: 2px;
+    border: 1px solid #e39d4b;
+    margin-top: 20px;
+    height: 25px;
+}
+
+.delete-btn {
+    background: red;
+    border-radius: 2px;
+    border: 1px solid #ec3d3d;
+    color: white;
+    height: 25px;
+}
