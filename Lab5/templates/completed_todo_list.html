@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Completed Tasks</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+</head>
+<body>
+<div class="header">
+<h2>ToDoList</h2>
+</div>
+<div class="main">
+<button class="add-btn">Add Task</button>
+<table class="items">
+    <caption>List 1</caption>
+    <hr>
+    <tr>
+        <th>Task</th>
+        <th>Created</th>
+        <th>Due On</th>
+        <th>Owner</th>
+        <th>Mark</th>
+    </tr>
+            <tr>
+        <td class="name">{{ task.task }}</td>
+        <td>{{ task.create_date }}</td>
+        <td>{{ task.dueon_date }}</td>
+        <td>{{ task.owner }}</td>
+        <td> <button class="done-btn">Done</button></td>
+    </tr>
+
+</table>
+    {% block body %}
+
+    {% endblock %}
+</div>
+</body>
+</html>
